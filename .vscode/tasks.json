@@ -1,0 +1,12 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Java",
+            "type": "shell",
+            "command": "mkdir -p bin && javac -d bin src/Main.java", //Менять для определения исполняемого файла
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
