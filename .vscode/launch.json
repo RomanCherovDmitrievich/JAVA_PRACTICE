@@ -5,9 +5,10 @@
             "type": "java",
             "name": "Launch Main",
             "request": "launch",
-            "mainClass": "Main", // Менять для определения исполняемого файла
+            "mainClass": "${file}",
             "preLaunchTask": "Build Java", 
-            "vmArgs": "--enable-preview"
+            "vmArgs": "--enable-preview",
+
         }
     ]
 }
