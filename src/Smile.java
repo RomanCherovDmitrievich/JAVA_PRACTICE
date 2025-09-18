@@ -1,6 +1,9 @@
 import javax.print.DocFlavor.STRING;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Iterator;
+
+
 // Упражнение 2
 class DrawLine
 {
@@ -10,10 +13,15 @@ class DrawLine
     {
         System.out.println(line);
     }
+    public static void error_draw()
+    {
+        System.out.println("Error");
+    }
 }
 
 public class Smile {
     public static void main(String[] args) {
+        
         ArrayList<String> smile = new ArrayList<>();
         DrawLine l = new DrawLine();
 
@@ -31,9 +39,12 @@ public class Smile {
 
         while(it.hasNext())
         {
-            //l.line = it.next();
             l.draw(it.next());
+            l.error_draw();
         }        
+        smile.clear();
+
+
     }
 }
 
