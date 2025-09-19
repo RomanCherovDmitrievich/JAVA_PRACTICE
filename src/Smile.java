@@ -8,7 +8,6 @@ import java.util.Iterator;
 class DrawLine
 {
     public String line;
-
     public static void draw(String line)
     {
         System.out.println(line);
@@ -27,13 +26,15 @@ public class Smile {
 
 
         smile.add("  ####  ");
-        smile.add(" #    # ");
+        smile.add(" #    # "); 
         smile.add("# #  # #");
         smile.add("#      #");
         smile.add("# #  # #");
         smile.add("#  ##  #");
         smile.add(" #    # ");
         smile.add("  ####  ");
+
+        l.draw("  ####   ");
 
         Iterator<String> it = smile.iterator();
 
@@ -43,8 +44,6 @@ public class Smile {
             l.error_draw();
         }        
         smile.clear();
-
-
     }
 }
 
